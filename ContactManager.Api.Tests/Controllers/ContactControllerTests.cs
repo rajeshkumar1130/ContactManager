@@ -9,7 +9,10 @@ using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 using ContactManager.Entities.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Http;
+using ContactManager.Common.Constants;
 
 namespace ContactManager.Api.Tests.Controllers
 {
@@ -23,7 +26,7 @@ namespace ContactManager.Api.Tests.Controllers
         /// <param name="input"></param>
         [Theory]
         [JsonFileDataAttribute(TestData, "GetContacts")]
-        public void GetContacts(JObject output)
+        public async Task GetContacts(JObject output)
         {
             //Arrange
             var contact = JsonConvert.DeserializeObject<Contact>(output.ToString());
@@ -31,12 +34,17 @@ namespace ContactManager.Api.Tests.Controllers
             contacts.Add(contact);
 
             var repository = new Mock<IContactRepository>();
-            repository.Setup(x => x.Get()).Returns(contacts);
+            repository.Setup(x => x.Get()).ReturnsAsync(contacts);
 
             ContactController controller = new ContactController(repository.Object);
+            controller.ControllerContext = new ControllerContext
+            {
+                HttpContext = new DefaultHttpContext()
+            };
+            controller.ControllerContext.HttpContext.Request.Headers.Add(ContactManagerConstatants.ClientId, "12345");
 
             //Act
-            var response = controller.Get();
+            var response = await controller.Get();
 
             //Assert
             var result = ((IEnumerable<Contact>)((ObjectResult)response).Value);
@@ -49,18 +57,23 @@ namespace ContactManager.Api.Tests.Controllers
         /// <param name="input"></param>
         [Theory]
         [JsonFileDataAttribute(TestData, "GetContactById")]
-        public void GetContactById(int id, JObject output)
+        public async Task GetContactById(int id, JObject output)
         {
             //Arrange
             var contact = JsonConvert.DeserializeObject<Contact>(output.ToString());
 
             var repository = new Mock<IContactRepository>();
-            repository.Setup(x => x.Get(It.IsAny<int>())).Returns(contact);
+            repository.Setup(x => x.Get(It.IsAny<int>())).ReturnsAsync(contact);
 
             ContactController controller = new ContactController(repository.Object);
+            controller.ControllerContext = new ControllerContext
+            {
+                HttpContext = new DefaultHttpContext()
+            };
+            controller.ControllerContext.HttpContext.Request.Headers.Add(ContactManagerConstatants.ClientId, "12345");
 
             //Act
-            var response = controller.Get(id);
+            var response = await controller.Get(id);
 
             //Assert
             var result = ((Contact)((ObjectResult)response).Value);
@@ -91,19 +104,24 @@ namespace ContactManager.Api.Tests.Controllers
         /// <param name="input"></param>
         [Theory]
         [JsonFileDataAttribute(TestData, "CreateContact")]
-        public void CreateContact(JObject input, JObject output)
+        public async Task CreateContact(JObject input, JObject output)
         {
             //Arrange
             var contactViewModel = JsonConvert.DeserializeObject<ContactViewModel>(input.ToString());
             var contact = JsonConvert.DeserializeObject<Contact>(output.ToString());
 
             var repository = new Mock<IContactRepository>();
-            repository.Setup(x => x.Create(It.IsAny<ContactViewModel>())).Returns(contact);
+            repository.Setup(x => x.Create(It.IsAny<ContactViewModel>())).ReturnsAsync(contact);
 
             ContactController controller = new ContactController(repository.Object);
+            controller.ControllerContext = new ControllerContext
+            {
+                HttpContext = new DefaultHttpContext()
+            };
+            controller.ControllerContext.HttpContext.Request.Headers.Add(ContactManagerConstatants.ClientId, "12345");
 
             //Act
-            var response = controller.Post(contactViewModel);
+            var response = await controller.Post(contactViewModel);
 
             //Assert
             var result = ((Contact)((ObjectResult)response).Value);
@@ -116,19 +134,24 @@ namespace ContactManager.Api.Tests.Controllers
         /// <param name="input"></param>
         [Theory]
         [JsonFileDataAttribute(TestData, "UpdateContact")]
-        public void UpdateContact(JObject input, JObject output)
+        public async Task UpdateContact(JObject input, JObject output)
         {
             //Arrange
             var request = JsonConvert.DeserializeObject<Contact>(input.ToString());
             var contact = JsonConvert.DeserializeObject<Contact>(output.ToString());
 
             var repository = new Mock<IContactRepository>();
-            repository.Setup(x => x.Update(It.IsAny<Contact>())).Returns(contact);
+            repository.Setup(x => x.Update(It.IsAny<Contact>())).ReturnsAsync(contact);
 
             ContactController controller = new ContactController(repository.Object);
+            controller.ControllerContext = new ControllerContext
+            {
+                HttpContext = new DefaultHttpContext()
+            };
+            controller.ControllerContext.HttpContext.Request.Headers.Add(ContactManagerConstatants.ClientId, "12345");
 
             //Act
-            var response = controller.Put(request);
+            var response = await controller.Put(request);
 
             //Assert
             var result = ((Contact)((ObjectResult)response).Value);
@@ -141,17 +164,22 @@ namespace ContactManager.Api.Tests.Controllers
         /// <param name="input"></param>
         [Theory]
         [JsonFileDataAttribute(TestData, "DeleteContact")]
-        public void DeleteContact(int id)
+        public async Task DeleteContact(int id)
         {
             //Arrange
 
             var repository = new Mock<IContactRepository>();
-            repository.Setup(x => x.Delete(It.IsAny<int>())).Returns(id);
+            repository.Setup(x => x.Delete(It.IsAny<int>())).ReturnsAsync(id);
 
             ContactController controller = new ContactController(repository.Object);
+            controller.ControllerContext = new ControllerContext
+            {
+                HttpContext = new DefaultHttpContext()
+            };
+            controller.ControllerContext.HttpContext.Request.Headers.Add(ContactManagerConstatants.ClientId, "12345");
 
             //Act
-            var response = controller.Delete(id);
+            var response = await controller.Delete(id);
 
             //Assert
             var result = ((int)((ObjectResult)response).Value);

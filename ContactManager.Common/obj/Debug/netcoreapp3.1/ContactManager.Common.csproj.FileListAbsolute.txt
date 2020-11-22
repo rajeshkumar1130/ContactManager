@@ -18,7 +18,7 @@ C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Common\bin\Debug\net
 C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Common\obj\Debug\netcoreapp3.1\ContactManager.Common.csprojAssemblyReference.cache
 C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Common\obj\Debug\netcoreapp3.1\ContactManager.Common.AssemblyInfoInputs.cache
 C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Common\obj\Debug\netcoreapp3.1\ContactManager.Common.AssemblyInfo.cs
-C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Common\obj\Debug\netcoreapp3.1\ContactManager.Common.csproj.CoreCompileInputs.cache
 C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Common\obj\Debug\netcoreapp3.1\ContactManager.Common.dll
 C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Common\obj\Debug\netcoreapp3.1\ContactManager.Common.pdb
 C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Common\obj\Debug\netcoreapp3.1\ContactManager.Common.genruntimeconfig.cache
+C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Common\obj\Debug\netcoreapp3.1\ContactManager.Common.csproj.CoreCompileInputs.cache

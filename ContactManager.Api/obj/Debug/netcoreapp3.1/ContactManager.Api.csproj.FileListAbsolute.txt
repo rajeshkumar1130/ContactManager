@@ -136,9 +136,6 @@ C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api\bin\Debug\netcor
 C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api\obj\Debug\netcoreapp3.1\ContactManager.Api.csprojAssemblyReference.cache
 C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api\obj\Debug\netcoreapp3.1\ContactManager.Api.AssemblyInfoInputs.cache
 C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api\obj\Debug\netcoreapp3.1\ContactManager.Api.AssemblyInfo.cs
-C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api\obj\Debug\netcoreapp3.1\ContactManager.Api.csproj.CoreCompileInputs.cache
-C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api\obj\Debug\netcoreapp3.1\ContactManager.Api.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api\obj\Debug\netcoreapp3.1\ContactManager.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api\obj\Debug\netcoreapp3.1\ContactManager.Api.RazorTargetAssemblyInfo.cache
 C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api\obj\Debug\netcoreapp3.1\ContactManager.Api.csproj.CopyComplete
 C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api\obj\Debug\netcoreapp3.1\staticwebassets\ContactManager.Api.StaticWebAssets.Manifest.cache
@@ -146,3 +143,12 @@ C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api\obj\Debug\netcor
 C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api\obj\Debug\netcoreapp3.1\ContactManager.Api.dll
 C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api\obj\Debug\netcoreapp3.1\ContactManager.Api.pdb
 C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api\obj\Debug\netcoreapp3.1\ContactManager.Api.genruntimeconfig.cache
+C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api\bin\Debug\netcoreapp3.1\xunit.abstractions.dll
+C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api\bin\Debug\netcoreapp3.1\xunit.assert.dll
+C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api\bin\Debug\netcoreapp3.1\xunit.core.dll
+C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api\bin\Debug\netcoreapp3.1\xunit.execution.dotnet.dll
+C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api\bin\Debug\netcoreapp3.1\ContactManager.Common.dll
+C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api\bin\Debug\netcoreapp3.1\ContactManager.Common.pdb
+C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api\obj\Debug\netcoreapp3.1\ContactManager.Api.csproj.CoreCompileInputs.cache
+C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api\obj\Debug\netcoreapp3.1\ContactManager.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api\obj\Debug\netcoreapp3.1\ContactManager.Api.MvcApplicationPartsAssemblyInfo.cache

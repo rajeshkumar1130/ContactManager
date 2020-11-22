@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using ContactManager.Common.Helper;
 using ContactManager.Entities.Models;
 using ContactManager.Interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -25,6 +26,7 @@ namespace ContactManager.Api.Controllers
         {
             try
             {
+                ContactManagerHelper.HeaderValidation(Request);
                 var contacts = await _repository.Get();
 
                 return Ok(contacts);
@@ -43,6 +45,7 @@ namespace ContactManager.Api.Controllers
         {
             try
             {
+                ContactManagerHelper.HeaderValidation(Request);
                 var contact = await _repository.Get(id);
                 if (contact is null)
                     return NotFound();
@@ -78,6 +81,7 @@ namespace ContactManager.Api.Controllers
             {
                 if (ModelState.IsValid)
                 {
+                    ContactManagerHelper.HeaderValidation(Request);
                     var createdContact = await _repository.Create(contact);
                     return Created("newContact", createdContact);
                 }
@@ -111,6 +115,7 @@ namespace ContactManager.Api.Controllers
         {
             if (ModelState.IsValid)
             {
+                ContactManagerHelper.HeaderValidation(Request);
                 await _repository.Update(contact);
                 return Ok(contact);
             }
@@ -127,6 +132,7 @@ namespace ContactManager.Api.Controllers
         {
             if (ModelState.IsValid)
             {
+                ContactManagerHelper.HeaderValidation(Request);
                 await _repository.Delete(id);
                 return Ok(id);
             }
