@@ -2,7 +2,7 @@
 Contact Manager Web API project using .net core 3.1, entity framework core and sql server.
 
 
-#How to run
+# How to run
 1. Update the connection string in appsettings.json
 2. Create the database using DatabaseCreationScript.sql or create a database named ContactManager and run the migration script in the Migrations folder using Update-Database command
    in the package manager console.
@@ -30,7 +30,7 @@ Contact Manager Web API project using .net core 3.1, entity framework core and s
     }
 ```
 
-#Project structure
+# Project structure
 Contact manager application has following projects
 1. ContactManager.Api: Interacts with repository to perform CRUD operation
 2. ContactManager.Api.Tests: Contains unit test cases for ContactManager.Api
