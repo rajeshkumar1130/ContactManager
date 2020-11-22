@@ -1,0 +1,119 @@
+{
+  "GetContacts": [
+    [
+      {
+        "ContactId": 1,
+        "FirstName": "Rajesh",
+        "LastName": "Kumar",
+        "Email": "rajesh@gmail.com",
+        "PhoneNumber": "0000000000",
+        "Status": "Active"
+      }
+    ]
+  ],
+  "GetContactById": [
+    [
+      1,
+      {
+        "ContactId": 1,
+        "FirstName": "Rajesh",
+        "LastName": "Kumar",
+        "Email": "rajesh@gmail.com",
+        "PhoneNumber": "0000000000",
+        "Status": "Active"
+      }
+    ]
+  ],
+  "CreateContact": [
+    [
+      {
+        "FirstName": "Rajesh",
+        "LastName": "Kumar",
+        "Email": "rajesh@gmail.com",
+        "PhoneNumber": "0000000000",
+        "Status": "Active"
+      },
+      {
+        "ContactId": 1,
+        "FirstName": "Rajesh",
+        "LastName": "Kumar",
+        "Email": "rajesh@gmail.com",
+        "PhoneNumber": "0000000000",
+        "Status": "Active"
+      }
+    ]
+  ],
+  "UpdateContact": [
+    [
+      {
+        "ContactId": 1,
+        "FirstName": "Rajesh",
+        "LastName": "Kumar",
+        "Email": "rajesh@gmail.com",
+        "PhoneNumber": "0000000000",
+        "Status": "Active"
+      },
+      {
+        "ContactId": 1,
+        "FirstName": "Rajesh",
+        "LastName": "Kumar",
+        "Email": "rajesh@gmail.com",
+        "PhoneNumber": "0000000000",
+        "Status": "Active"
+      }
+    ]
+  ],
+  "DeleteContact": [
+    [
+      1
+    ]
+  ],
+  "InputValidationError": [
+    [
+      {
+        "LastName": "Kumar",
+        "Email": "rajesh@gmail.com",
+        "PhoneNumber": "0000000000",
+        "Status": "Active"
+      },
+      "FirstName"
+    ],
+    [
+      {
+        "FirstName": "Rajesh",
+        "Email": "rajesh@gmail.com",
+        "PhoneNumber": "0000000000",
+        "Status": "Active"
+      },
+      "LastName"
+    ],
+    [
+      {
+        "FirstName": "Rajesh",
+        "LastName": "Kumar",
+        "PhoneNumber": "0000000000",
+        "Status": "Active"
+      },
+      "Email"
+    ],
+    [
+      {
+        "FirstName": "Rajesh",
+        "LastName": "Kumar",
+        "Email": "rajesh.com",
+        "PhoneNumber": "0000000000",
+        "Status": "Active"
+      },
+      "Email"
+    ],
+    [
+      {
+        "FirstName": "Rajesh",
+        "LastName": "Kumar",
+        "Email": "rajesh@gmail.com",
+        "PhoneNumber": "0000000000"
+      },
+      "Status"
+    ]
+  ]
+}

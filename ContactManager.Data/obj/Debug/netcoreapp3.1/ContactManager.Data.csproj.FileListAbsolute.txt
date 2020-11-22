@@ -1,0 +1,17 @@
+C:\Users\A542619\Source\Repos\ContactManager.Data\bin\Debug\netcoreapp3.1\ContactManager.Data.deps.json
+C:\Users\A542619\Source\Repos\ContactManager.Data\bin\Debug\netcoreapp3.1\ContactManager.Data.dll
+C:\Users\A542619\Source\Repos\ContactManager.Data\obj\Debug\netcoreapp3.1\ContactManager.Data.csprojAssemblyReference.cache
+C:\Users\A542619\Source\Repos\ContactManager.Data\obj\Debug\netcoreapp3.1\ContactManager.Data.AssemblyInfoInputs.cache
+C:\Users\A542619\Source\Repos\ContactManager.Data\obj\Debug\netcoreapp3.1\ContactManager.Data.AssemblyInfo.cs
+C:\Users\A542619\Source\Repos\ContactManager.Data\bin\Debug\netcoreapp3.1\ContactManager.Data.pdb
+C:\Users\A542619\Source\Repos\ContactManager.Data\bin\Debug\netcoreapp3.1\ContactManager.Entities.dll
+C:\Users\A542619\Source\Repos\ContactManager.Data\bin\Debug\netcoreapp3.1\ContactManager.Entities.pdb
+C:\Users\A542619\Source\Repos\ContactManager.Data\obj\Debug\netcoreapp3.1\ContactManager.Data.csproj.CopyComplete
+C:\Users\A542619\Source\Repos\ContactManager.Data\obj\Debug\netcoreapp3.1\ContactManager.Data.dll
+C:\Users\A542619\Source\Repos\ContactManager.Data\obj\Debug\netcoreapp3.1\ContactManager.Data.pdb
+C:\Users\A542619\Source\Repos\ContactManager.Data\bin\Debug\netcoreapp3.1\ContactManager.Interfaces.dll
+C:\Users\A542619\Source\Repos\ContactManager.Data\bin\Debug\netcoreapp3.1\ContactManager.Interfaces.pdb
+C:\Users\A542619\Source\Repos\ContactManager.Data\bin\Debug\netcoreapp3.1\ContactManager.Data.runtimeconfig.json
+C:\Users\A542619\Source\Repos\ContactManager.Data\bin\Debug\netcoreapp3.1\ContactManager.Data.runtimeconfig.dev.json
+C:\Users\A542619\Source\Repos\ContactManager.Data\obj\Debug\netcoreapp3.1\ContactManager.Data.genruntimeconfig.cache
+C:\Users\A542619\Source\Repos\ContactManager.Data\obj\Debug\netcoreapp3.1\ContactManager.Data.csproj.CoreCompileInputs.cache
