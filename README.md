@@ -1,4 +1,4 @@
-# ContactManager
+# Contact Manager API
 Contact Manager Web API project using .net core 3.1, entity framework core and sql server.
 
 
