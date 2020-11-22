@@ -8,7 +8,8 @@ Contact Manager Web API project using .net core 3.1, entity framework core and s
    in the package manager console.
 3. Set ContactManager.Api project as startup project in visual studio and run the application using F5 key.
 4. This will open a swaggar url where you can test the api.
-5. To create new contact use post method with request in the following format;
+5. Pass 12345 for ClientId header parameter.
+6. To create new contact use post method with request in the following format;
 ```json
     {
       "firstName": "Rajesh",
@@ -18,7 +19,7 @@ Contact Manager Web API project using .net core 3.1, entity framework core and s
       "status": "Active"
     }
 ```
-6. To update an existing contact use put method with request in the following format:
+7. To update an existing contact use put method with request in the following format:
 ```json
     {
       "contactId": 1,	
@@ -31,13 +32,13 @@ Contact Manager Web API project using .net core 3.1, entity framework core and s
 ```
 
 # Project structure
-Contact manager application has following projects
-1. ContactManager.Api: Interacts with repository to perform CRUD operation
+Contact manager application has following projects.
+1. ContactManager.Api: Interacts with repository to perform CRUD operation.
 2. ContactManager.Api.Tests: Contains unit test cases for ContactManager.Api
-3. ContactManager.Common: Contains JsonFileDataAttribute class which is used for unit testing purspose
-4. ContactManager.Data: Contains Dbcontext, repository and migrations
-5. ContactManager.Entities: Contains model classes
-6. ContactManager.Interfaces: Contains Interfaces used in the application
+3. ContactManager.Common: Contains utility classes.
+4. ContactManager.Data: Contains Dbcontext, repository and migrations.
+5. ContactManager.Entities: Contains model classes.
+6. ContactManager.Interfaces: Contains Interfaces used in the application.
 
 
 
