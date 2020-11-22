@@ -1,5 +1,6 @@
 ﻿using ContactManager.Entities.Models;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace ContactManager.Interfaces
 {
@@ -11,26 +12,26 @@ namespace ContactManager.Interfaces
         /// <summary>
         /// Create new contact
         /// </summary>
-        Contact Create(ContactViewModel contact);
+        Task<Contact> Create(ContactViewModel contact);
 
         /// <summary>
         /// Delete contact
         /// </summary>
-        int Delete(int id);
+        Task<int> Delete(int id);
 
         /// <summary>
         /// Get all contacts
         /// </summary>
-        IEnumerable<Contact> Get();
+        Task<IEnumerable<Contact>> Get();
 
         /// <summary>
         /// Get contact
         /// </summary>
-        Contact Get(int id);
+        Task<Contact> Get(int id);
 
         /// <summary>
         /// Update contact
         /// </summary>
-        Contact Update(Contact contact);
+        Task<Contact> Update(Contact contact);
     }
 }

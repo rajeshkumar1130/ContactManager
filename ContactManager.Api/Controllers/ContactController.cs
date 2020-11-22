@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using ContactManager.Entities.Models;
 using ContactManager.Interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -20,11 +21,11 @@ namespace ContactManager.Api.Controllers
         /// Gets a list of all contacts
         /// </summary>
         [HttpGet]
-        public IActionResult Get()
+        public async Task<IActionResult> Get()
         {
             try
             {
-                var contacts = _repository.Get();
+                var contacts = await _repository.Get();
 
                 return Ok(contacts);
             }
@@ -38,11 +39,11 @@ namespace ContactManager.Api.Controllers
         /// Get a specific contact by id
         /// </summary>
         [HttpGet("{id}")]
-        public IActionResult Get(int id)
+        public async Task<IActionResult> Get(int id)
         {
             try
             {
-                var contact = _repository.Get(id);
+                var contact = await _repository.Get(id);
                 if (contact is null)
                     return NotFound();
                 return Ok(contact);
@@ -71,13 +72,13 @@ namespace ContactManager.Api.Controllers
         ///
         /// </remarks>
         [HttpPost]
-        public IActionResult Post([FromBody] ContactViewModel contact)
+        public async Task<IActionResult> Post([FromBody] ContactViewModel contact)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    var createdContact = _repository.Create(contact);
+                    var createdContact = await _repository.Create(contact);
                     return Created("newContact", createdContact);
                 }
                 return BadRequest(ModelState);
@@ -106,11 +107,11 @@ namespace ContactManager.Api.Controllers
         ///
         /// </remarks>
         [HttpPut]
-        public IActionResult Put([FromBody] Contact contact)
+        public async Task<IActionResult> Put([FromBody] Contact contact)
         {
             if (ModelState.IsValid)
             {
-                _repository.Update(contact);
+                await _repository.Update(contact);
                 return Ok(contact);
             }
             return BadRequest(ModelState);
@@ -122,11 +123,11 @@ namespace ContactManager.Api.Controllers
         /// <param name="id"></param>
         /// <returns>HttpStatusCode 200</returns>
         [HttpDelete]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
             if (ModelState.IsValid)
             {
-                _repository.Delete(id);
+                await _repository.Delete(id);
                 return Ok(id);
             }
             return BadRequest(ModelState);

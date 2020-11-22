@@ -10,3 +10,15 @@ C:\Users\A542619\Source\Repos\ContactManager.Interfaces\obj\Debug\netcoreapp3.1\
 C:\Users\A542619\Source\Repos\ContactManager.Interfaces\obj\Debug\netcoreapp3.1\ContactManager.Interfaces.csproj.CopyComplete
 C:\Users\A542619\Source\Repos\ContactManager.Interfaces\obj\Debug\netcoreapp3.1\ContactManager.Interfaces.dll
 C:\Users\A542619\Source\Repos\ContactManager.Interfaces\obj\Debug\netcoreapp3.1\ContactManager.Interfaces.pdb
+C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Interfaces\bin\Debug\netcoreapp3.1\ContactManager.Interfaces.deps.json
+C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Interfaces\bin\Debug\netcoreapp3.1\ContactManager.Interfaces.dll
+C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Interfaces\bin\Debug\netcoreapp3.1\ContactManager.Interfaces.pdb
+C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Interfaces\bin\Debug\netcoreapp3.1\ContactManager.Entities.dll
+C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Interfaces\bin\Debug\netcoreapp3.1\ContactManager.Entities.pdb
+C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Interfaces\obj\Debug\netcoreapp3.1\ContactManager.Interfaces.csprojAssemblyReference.cache
+C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Interfaces\obj\Debug\netcoreapp3.1\ContactManager.Interfaces.AssemblyInfoInputs.cache
+C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Interfaces\obj\Debug\netcoreapp3.1\ContactManager.Interfaces.AssemblyInfo.cs
+C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Interfaces\obj\Debug\netcoreapp3.1\ContactManager.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Interfaces\obj\Debug\netcoreapp3.1\ContactManager.Interfaces.csproj.CopyComplete
+C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Interfaces\obj\Debug\netcoreapp3.1\ContactManager.Interfaces.dll
+C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Interfaces\obj\Debug\netcoreapp3.1\ContactManager.Interfaces.pdb

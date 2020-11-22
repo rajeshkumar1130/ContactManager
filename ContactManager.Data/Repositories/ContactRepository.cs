@@ -1,8 +1,10 @@
 ﻿using ContactManager.Entities.Models;
 using ContactManager.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace ContactManager.Data.Repositories
 {
@@ -18,13 +20,13 @@ namespace ContactManager.Data.Repositories
         /// <summary>
         /// Get all contact
         /// </summary>
-        public IEnumerable<Contact> Get()
+        public async Task<IEnumerable<Contact>> Get()
         {
             try
             {
-                var contacts = _context.Contacts.ToList();
+                var contacts = await _context.Contacts.ToListAsync();
 
-                return contacts;
+                return (IEnumerable<Contact>)contacts;
             }
             catch (Exception e)
             {
@@ -35,9 +37,9 @@ namespace ContactManager.Data.Repositories
         /// <summary>
         /// Get contact by id
         /// </summary>
-        public Contact Get(int id)
+        public async Task<Contact> Get(int id)
         {
-            var contact = _context.Contacts.Find(id);
+            var contact = await _context.Contacts.FindAsync(id);
 
             return contact;
         }
@@ -45,11 +47,11 @@ namespace ContactManager.Data.Repositories
         /// <summary>
         /// Create new contact
         /// </summary>
-        public Contact Create(ContactViewModel contact)
+        public async Task<Contact> Create(ContactViewModel contact)
         {
             var contactModel = ContactToModel(contact);
             _context.Contacts.Add(contactModel);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             return contactModel;
         }
@@ -57,10 +59,10 @@ namespace ContactManager.Data.Repositories
         /// <summary>
         /// Update contact
         /// </summary>
-        public Contact Update(Contact contact)
+        public async Task<Contact> Update(Contact contact)
         {
             _context.Contacts.Update(contact);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             return contact;
         }
@@ -68,11 +70,11 @@ namespace ContactManager.Data.Repositories
         /// <summary>
         /// Delete contact
         /// </summary>
-        public int Delete(int id)
+        public async Task<int> Delete(int id)
         {
-            var contactModel = _context.Contacts.Find(id);
+            var contactModel = await _context.Contacts.FindAsync(id);
             _context.Contacts.Remove(contactModel);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
             return id;
         }
 

@@ -154,3 +154,9 @@ C:\Users\A542619\Source\Repos\ContactManager.Api.Tests\obj\Debug\netcoreapp3.1\C
 C:\Users\A542619\Source\Repos\ContactManager.Api.Tests\obj\Debug\netcoreapp3.1\ContactManager.Api.Tests.dll
 C:\Users\A542619\Source\Repos\ContactManager.Api.Tests\obj\Debug\netcoreapp3.1\ContactManager.Api.Tests.pdb
 C:\Users\A542619\Source\Repos\ContactManager.Api.Tests\bin\Debug\netcoreapp3.1\TestData\TestData.json
+C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api.Tests\obj\Debug\netcoreapp3.1\ContactManager.Api.Tests.csprojAssemblyReference.cache
+C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api.Tests\obj\Debug\netcoreapp3.1\ContactManager.Api.Tests.AssemblyInfoInputs.cache
+C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api.Tests\obj\Debug\netcoreapp3.1\ContactManager.Api.Tests.AssemblyInfo.cs
+C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api.Tests\obj\Debug\netcoreapp3.1\ContactManager.Api.Tests.csproj.CoreCompileInputs.cache
+C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api.Tests\obj\Debug\netcoreapp3.1\ContactManager.Api.Tests.dll
+C:\Users\A542619\Source\Repos\ContactManager\ContactManager.Api.Tests\obj\Debug\netcoreapp3.1\ContactManager.Api.Tests.pdb
