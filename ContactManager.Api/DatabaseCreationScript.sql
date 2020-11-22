@@ -1,7 +1,7 @@
 USE [master]
 GO
 
-CREATE DATABASE [HeathHopkins] 
+CREATE DATABASE [ContactManager] 
 GO
 
 USE [ContactManager]
